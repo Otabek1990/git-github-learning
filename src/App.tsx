@@ -1,3 +1,6 @@
+import Navbar from "./components/Navbar"
+import { Route, Routes } from "react-router-dom"
+import "./index.css";
 import { useState } from "react";
 import Login from "./pages/Login";
 
@@ -5,7 +8,10 @@ function App() {
   const [son, setSon] = useState(10);
   return (
     <div>
-      <Login/>
+      <Navbar />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+      </Routes>
       <h1>demo abdukarim</h1>
       <h1>hello app</h1>
       <h1>Azizbek</h1>
