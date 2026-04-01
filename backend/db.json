@@ -1,4 +1,704 @@
 {
-    "mahsulotlar "[
+    "mahsulotlar": [
+        {
+            "id": 1,
+            "nomi": "Telefon",
+            "modeli": "Samsung A52",
+            "narxi": 1200,
+            "soni": 10
+        },
+        {
+            "id": 2,
+            "nomi": "Telefon",
+            "modeli": "iPhone 13",
+            "narxi": 1500,
+            "soni": 8
+        },
+        {
+            "id": 3,
+            "nomi": "Noutbuk",
+            "modeli": "HP Pavilion",
+            "narxi": 5500,
+            "soni": 5
+        },
+        {
+            "id": 4,
+            "nomi": "Noutbuk",
+            "modeli": "Dell Inspiron",
+            "narxi": 5300,
+            "soni": 6
+        },
+        {
+            "id": 5,
+            "nomi": "Planshet",
+            "modeli": "iPad Air",
+            "narxi": 2300,
+            "soni": 7
+        },
+        {
+            "id": 6,
+            "nomi": "Planshet",
+            "modeli": "Samsung Tab S7",
+            "narxi": 2100,
+            "soni": 9
+        },
+        {
+            "id": 7,
+            "nomi": "Quloqchin",
+            "modeli": "AirPods Pro",
+            "narxi": 300,
+            "soni": 15
+        },
+        {
+            "id": 8,
+            "nomi": "Quloqchin",
+            "modeli": "Sony WH-1000XM4",
+            "narxi": 400,
+            "soni": 12
+        },
+        {
+            "id": 9,
+            "nomi": "Smart soat",
+            "modeli": "Apple Watch 7",
+            "narxi": 900,
+            "soni": 10
+        },
+        {
+            "id": 10,
+            "nomi": "Smart soat",
+            "modeli": "Galaxy Watch 5",
+            "narxi": 850,
+            "soni": 11
+        },
+        {
+            "id": 11,
+            "nomi": "Monitor",
+            "modeli": "LG 24MK",
+            "narxi": 1800,
+            "soni": 4
+        },
+        {
+            "id": 12,
+            "nomi": "Monitor",
+            "modeli": "Samsung Curved",
+            "narxi": 2000,
+            "soni": 3
+        },
+        {
+            "id": 13,
+            "nomi": "Klaviatura",
+            "modeli": "Logitech K120",
+            "narxi": 120,
+            "soni": 20
+        },
+        {
+            "id": 14,
+            "nomi": "Sichqoncha",
+            "modeli": "Logitech M185",
+            "narxi": 80,
+            "soni": 25
+        },
+        {
+            "id": 15,
+            "nomi": "Printer",
+            "modeli": "Canon LBP2900",
+            "narxi": 2000,
+            "soni": 6
+        },
+        {
+            "id": 16,
+            "nomi": "Router",
+            "modeli": "TP-Link 840N",
+            "narxi": 300,
+            "soni": 18
+        },
+        {
+            "id": 17,
+            "nomi": "USB fleshka",
+            "modeli": "Kingston 32GB",
+            "narxi": 60,
+            "soni": 30
+        },
+        {
+            "id": 18,
+            "nomi": "Qattiq disk",
+            "modeli": "Seagate 1TB",
+            "narxi": 700,
+            "soni": 10
+        },
+        {
+            "id": 19,
+            "nomi": "SSD disk",
+            "modeli": "Samsung 870 EVO",
+            "narxi": 900,
+            "soni": 9
+        },
+        {
+            "id": 20,
+            "nomi": "Web kamera",
+            "modeli": "Logitech C270",
+            "narxi": 250,
+            "soni": 14
+        },
+        {
+            "id": 21,
+            "nomi": "Mikrofon",
+            "modeli": "BM800",
+            "narxi": 400,
+            "soni": 13
+        },
+        {
+            "id": 22,
+            "nomi": "Powerbank",
+            "modeli": "Xiaomi 20000mAh",
+            "narxi": 200,
+            "soni": 22
+        },
+        {
+            "id": 23,
+            "nomi": "Zaryadlovchi",
+            "modeli": "Anker Fast",
+            "narxi": 100,
+            "soni": 28
+        },
+        {
+            "id": 24,
+            "nomi": "HDMI kabel",
+            "modeli": "Baseus 2m",
+            "narxi": 50,
+            "soni": 35
+        },
+        {
+            "id": 25,
+            "nomi": "Adapter",
+            "modeli": "Type-C Hub",
+            "narxi": 40,
+            "soni": 19
+        },
+        {
+            "id": 26,
+            "nomi": "Televizor",
+            "modeli": "LG 43UQ",
+            "narxi": 4500,
+            "soni": 4
+        },
+        {
+            "id": 27,
+            "nomi": "Konditsioner",
+            "modeli": "Artel 12HR",
+            "narxi": 6000,
+            "soni": 3
+        },
+        {
+            "id": 28,
+            "nomi": "Muzlatgich",
+            "modeli": "Samsung RT38",
+            "narxi": 5200,
+            "soni": 2
+        },
+        {
+            "id": 29,
+            "nomi": "Kir yuvish mashinasi",
+            "modeli": "LG F2J3",
+            "narxi": 4800,
+            "soni": 5
+        },
+        {
+            "id": 30,
+            "nomi": "Changyutgich",
+            "modeli": "Bosch BGL",
+            "narxi": 900,
+            "soni": 7
+        },
+        {
+            "id": 31,
+            "nomi": "Dazmol",
+            "modeli": "Philips GC1740",
+            "narxi": 300,
+            "soni": 12
+        },
+        {
+            "id": 32,
+            "nomi": "Choynak",
+            "modeli": "Tefal KO",
+            "narxi": 150,
+            "soni": 15
+        },
+        {
+            "id": 33,
+            "nomi": "Mikroto‘lqinli pech",
+            "modeli": "Samsung ME",
+            "narxi": 1200,
+            "soni": 6
+        },
+        {
+            "id": 34,
+            "nomi": "Gaz plita",
+            "modeli": "Artel 6400",
+            "narxi": 2000,
+            "soni": 3
+        },
+        {
+            "id": 35,
+            "nomi": "Blender",
+            "modeli": "Bosch MSM",
+            "narxi": 350,
+            "soni": 10
+        },
+        {
+            "id": 36,
+            "nomi": "Ventilyator",
+            "modeli": "Vitek VT",
+            "narxi": 400,
+            "soni": 8
+        },
+        {
+            "id": 37,
+            "nomi": "Isitgich",
+            "modeli": "Ballu BH",
+            "narxi": 700,
+            "soni": 6
+        },
+        {
+            "id": 38,
+            "nomi": "Drill",
+            "modeli": "Makita HP",
+            "narxi": 650,
+            "soni": 9
+        },
+        {
+            "id": 39,
+            "nomi": "Generator",
+            "modeli": "Honda EU",
+            "narxi": 9000,
+            "soni": 2
+        },
+        {
+            "id": 40,
+            "nomi": "Velosiped",
+            "modeli": "Trek FX",
+            "narxi": 2500,
+            "soni": 5
+        },
+        {
+            "id": 41,
+            "nomi": "Skuter",
+            "modeli": "Xiaomi M365",
+            "narxi": 3200,
+            "soni": 4
+        },
+        {
+            "id": 42,
+            "nomi": "Krossovka",
+            "modeli": "Nike Air",
+            "narxi": 600,
+            "soni": 20
+        },
+        {
+            "id": 43,
+            "nomi": "Sumka",
+            "modeli": "Adidas Bag",
+            "narxi": 350,
+            "soni": 18
+        },
+        {
+            "id": 44,
+            "nomi": "Ko‘zoynak",
+            "modeli": "RayBan Classic",
+            "narxi": 200,
+            "soni": 14
+        },
+        {
+            "id": 45,
+            "nomi": "Soat",
+            "modeli": "Casio G-Shock",
+            "narxi": 800,
+            "soni": 9
+        },
+        {
+            "id": 46,
+            "nomi": "Parfyum",
+            "modeli": "Dior Sauvage",
+            "narxi": 500,
+            "soni": 11
+        },
+        {
+            "id": 47,
+            "nomi": "Krem",
+            "modeli": "Nivea Soft",
+            "narxi": 120,
+            "soni": 25
+        },
+        {
+            "id": 48,
+            "nomi": "Shampun",
+            "modeli": "Head & Shoulders",
+            "narxi": 70,
+            "soni": 30
+        },
+        {
+            "id": 49,
+            "nomi": "Sovun",
+            "modeli": "Dove",
+            "narxi": 20,
+            "soni": 40
+        },
+        {
+            "id": 50,
+            "nomi": "Tish pastasi",
+            "modeli": "Colgate",
+            "narxi": 30,
+            "soni": 35
+        },
+        {
+            "id": 51,
+            "nomi": "Sochiq",
+            "modeli": "Cotton Soft",
+            "narxi": 90,
+            "soni": 20
+        },
+        {
+            "id": 52,
+            "nomi": "Yostiq",
+            "modeli": "Sleep Comfort",
+            "narxi": 150,
+            "soni": 12
+        },
+        {
+            "id": 53,
+            "nomi": "Ko‘rpa",
+            "modeli": "Winter Warm",
+            "narxi": 300,
+            "soni": 10
+        },
+        {
+            "id": 54,
+            "nomi": "Gilam",
+            "modeli": "Persian Style",
+            "narxi": 1200,
+            "soni": 6
+        },
+        {
+            "id": 55,
+            "nomi": "Stol",
+            "modeli": "Office Desk",
+            "narxi": 900,
+            "soni": 8
+        },
+        {
+            "id": 56,
+            "nomi": "Stul",
+            "modeli": "Comfort Chair",
+            "narxi": 250,
+            "soni": 15
+        },
+        {
+            "id": 57,
+            "nomi": "Divan",
+            "modeli": "Modern Sofa",
+            "narxi": 3500,
+            "soni": 3
+        },
+        {
+            "id": 58,
+            "nomi": "Shkaf",
+            "modeli": "Wardrobe XL",
+            "narxi": 2800,
+            "soni": 4
+        },
+        {
+            "id": 59,
+            "nomi": "Kitob javoni",
+            "modeli": "BookShelf Pro",
+            "narxi": 1500,
+            "soni": 5
+        },
+        {
+            "id": 60,
+            "nomi": "Lampochka",
+            "modeli": "LED 12W",
+            "narxi": 25,
+            "soni": 50
+        },
+        {
+            "id": 61,
+            "nomi": "Chiroq",
+            "modeli": "Table Lamp",
+            "narxi": 200,
+            "soni": 13
+        },
+        {
+            "id": 62,
+            "nomi": "Kamera",
+            "modeli": "Canon EOS",
+            "narxi": 5000,
+            "soni": 4
+        },
+        {
+            "id": 63,
+            "nomi": "Tripod",
+            "modeli": "Stand Pro",
+            "narxi": 350,
+            "soni": 9
+        },
+        {
+            "id": 64,
+            "nomi": "Dron",
+            "modeli": "DJI Mini",
+            "narxi": 7000,
+            "soni": 2
+        },
+        {
+            "id": 65,
+            "nomi": "O‘yin konsoli",
+            "modeli": "PlayStation 5",
+            "narxi": 6000,
+            "soni": 3
+        },
+        {
+            "id": 66,
+            "nomi": "Joystick",
+            "modeli": "DualSense",
+            "narxi": 400,
+            "soni": 10
+        },
+        {
+            "id": 67,
+            "nomi": "VR ko‘zoynak",
+            "modeli": "Oculus Quest 2",
+            "narxi": 4500,
+            "soni": 4
+        },
+        {
+            "id": 68,
+            "nomi": "Kitob",
+            "modeli": "Badiiy asar",
+            "narxi": 80,
+            "soni": 30
+        },
+        {
+            "id": 69,
+            "nomi": "Daftar",
+            "modeli": "A4 96 varaq",
+            "narxi": 15,
+            "soni": 60
+        },
+        {
+            "id": 70,
+            "nomi": "Ruchka",
+            "modeli": "Parker",
+            "narxi": 5,
+            "soni": 100
+        },
+        {
+            "id": 71,
+            "nomi": "Qalam",
+            "modeli": "HB Pencil",
+            "narxi": 3,
+            "soni": 120
+        },
+        {
+            "id": 72,
+            "nomi": "Marker",
+            "modeli": "Permanent",
+            "narxi": 10,
+            "soni": 80
+        },
+        {
+            "id": 73,
+            "nomi": "Kalkulyator",
+            "modeli": "Casio FX",
+            "narxi": 60,
+            "soni": 14
+        },
+        {
+            "id": 74,
+            "nomi": "Doska",
+            "modeli": "Whiteboard",
+            "narxi": 200,
+            "soni": 6
+        },
+        {
+            "id": 75,
+            "nomi": "Qog‘oz",
+            "modeli": "A4 Pack",
+            "narxi": 50,
+            "soni": 40
+        },
+        {
+            "id": 76,
+            "nomi": "Papka",
+            "modeli": "File Folder",
+            "narxi": 20,
+            "soni": 70
+        },
+        {
+            "id": 77,
+            "nomi": "Skotch",
+            "modeli": "Tape 48mm",
+            "narxi": 10,
+            "soni": 90
+        },
+        {
+            "id": 78,
+            "nomi": "Batareya",
+            "modeli": "Duracell AA",
+            "narxi": 120,
+            "soni": 35
+        },
+        {
+            "id": 79,
+            "nomi": "Sim karta",
+            "modeli": "Beeline",
+            "narxi": 15,
+            "soni": 50
+        },
+        {
+            "id": 80,
+            "nomi": "WiFi kuchaytirgich",
+            "modeli": "TP-Link Extender",
+            "narxi": 250,
+            "soni": 12
+        },
+        {
+            "id": 81,
+            "nomi": "Signalizatsiya",
+            "modeli": "Security Pro",
+            "narxi": 900,
+            "soni": 5
+        },
+        {
+            "id": 82,
+            "nomi": "Eshik qulfi",
+            "modeli": "Smart Lock",
+            "narxi": 180,
+            "soni": 11
+        },
+        {
+            "id": 83,
+            "nomi": "Video kamera",
+            "modeli": "CCTV HD",
+            "narxi": 3000,
+            "soni": 6
+        },
+        {
+            "id": 84,
+            "nomi": "Akkumulyator",
+            "modeli": "12V 60Ah",
+            "narxi": 700,
+            "soni": 9
+        },
+        {
+            "id": 85,
+            "nomi": "Avto zaryadlovchi",
+            "modeli": "Car Charger",
+            "narxi": 90,
+            "soni": 25
+        },
+        {
+            "id": 86,
+            "nomi": "Shina",
+            "modeli": "Michelin",
+            "narxi": 1200,
+            "soni": 8
+        },
+        {
+            "id": 87,
+            "nomi": "Motor moyi",
+            "modeli": "Shell 5W-40",
+            "narxi": 250,
+            "soni": 20
+        },
+        {
+            "id": 88,
+            "nomi": "Antifriz",
+            "modeli": "Coolant Red",
+            "narxi": 180,
+            "soni": 18
+        },
+        {
+            "id": 89,
+            "nomi": "Yog‘ filtri",
+            "modeli": "Bosch Filter",
+            "narxi": 70,
+            "soni": 22
+        },
+        {
+            "id": 90,
+            "nomi": "Havo filtri",
+            "modeli": "Air Filter Pro",
+            "narxi": 60,
+            "soni": 19
+        },
+        {
+            "id": 91,
+            "nomi": "Tormoz kolodkasi",
+            "modeli": "Brake Pad Set",
+            "narxi": 220,
+            "soni": 13
+        },
+        {
+            "id": 92,
+            "nomi": "Faralar",
+            "modeli": "LED Headlight",
+            "narxi": 400,
+            "soni": 7
+        },
+        {
+            "id": 93,
+            "nomi": "Signal chiroq",
+            "modeli": "Indicator Light",
+            "narxi": 150,
+            "soni": 16
+        },
+        {
+            "id": 94,
+            "nomi": "Kreslo",
+            "modeli": "Office Chair",
+            "narxi": 600,
+            "soni": 10
+        },
+        {
+            "id": 95,
+            "nomi": "Ofis stol",
+            "modeli": "Work Desk",
+            "narxi": 1100,
+            "soni": 6
+        },
+        {
+            "id": 96,
+            "nomi": "Server",
+            "modeli": "Dell PowerEdge",
+            "narxi": 15000,
+            "soni": 2
+        },
+        {
+            "id": 97,
+            "nomi": "UPS",
+            "modeli": "APC 1000VA",
+            "narxi": 2000,
+            "soni": 4
+        },
+        {
+            "id": 98,
+            "nomi": "Switch",
+            "modeli": "Cisco 24 Port",
+            "narxi": 1800,
+            "soni": 3
+        },
+        {
+            "id": 99,
+            "nomi": "Access Point",
+            "modeli": "Ubiquiti UniFi",
+            "narxi": 950,
+            "soni": 5
+        },
+        {
+            "id": 100,
+            "nomi": "NAS",
+            "modeli": "Synology DS220+",
+            "narxi": 4000,
+            "soni": 2
+        }
     ]
 }
