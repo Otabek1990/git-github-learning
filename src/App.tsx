@@ -1,7 +1,10 @@
+import Navbar from "./components/Navbar"
+import "./index.css"; 
 
 function App() {
   return (
     <div>
+      <Navbar/>
       <h1>demo abdukarim</h1>
       <h1>hello app</h1>
       <h1>Otabek</h1>
