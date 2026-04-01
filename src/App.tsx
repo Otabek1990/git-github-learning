@@ -1,9 +1,11 @@
 import { useState } from "react";
+import Login from "./pages/Login";
 
 function App() {
   const [son, setSon] = useState(10);
   return (
     <div>
+      <Login/>
       <h1>demo abdukarim</h1>
       <h1>hello app</h1>
       <h1>Islom</h1>
