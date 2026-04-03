@@ -6,7 +6,7 @@ type Product = {
     id: number;
     narxi: number;
     soni: number;
-    modeli: string
+    modeli: string;
 };
 
 type ApiProps = {
@@ -50,18 +50,30 @@ function Home() {
     return (
         <div className="home-container">
             <h1 className="home-title">Home sahifa</h1>
+
             {prods && (
-                <div className="product-grid">
-                    {prods.data?.map((item: Product) => (
-                        <div className="product-card" key={item.id}>
-                            <p>Nomi: {item.nomi}</p >
-                            <p>Narxi: {item.narxi}</p>
-                            <p>Modeli: {item.modeli}</p>
-                            <p>ID: {item.id}</p>
-                            <p>Soni: {item.soni}</p>
-                        </div>
-                    ))}
-                </div>
+                <table className="product-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nomi</th>
+                            <th>Modeli</th>
+                            <th>Narxi</th>
+                            <th>Soni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {prods.data.map((item: Product) => (
+                            <tr key={item.id}>
+                                <td>{item.id}</td>
+                                <td>{item.nomi}</td>
+                                <td>{item.modeli}</td>
+                                <td>{item.narxi}</td>
+                                <td>{item.soni}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             )}
 
             <div className="pagination-controls">
