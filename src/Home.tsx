@@ -1,49 +1,95 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import "./index.css";
-type Mahsulot = {
-    id: number;
+import { useEffect, useState, type ChangeEvent } from "react";
+import "./Home.css";
+
+type Product = {
     nomi: string;
-    modeli: string;
+    id: number;
     narxi: number;
     soni: number;
+    modeli: string
 };
 
-function Home() {
-    const [mahsulotlar, setMahsulotlar] = useState<Mahsulot[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string>("");
+type ApiProps = {
+    data: Product[];
+    first: number;
+    items: number;
+    last: number;
+    next: number | null;
+    pages: number;
+    prev: number | null;
+};
 
-    const fetchMahsulotlar = async () => {
-        try {
-            const response = await axios.get<{ mahsulotlar: Mahsulot[] }>("http://localhost:8000/mahsulotlar");
-            setMahsulotlar(response.data.mahsulotlar);
-            setLoading(false);
-        } catch (err) {
-            setError("Ma'lumotlarni yuklashda xatolik yuz berdi.");
-            setLoading(false);
-        }
+const PER_PAGES: number[] = [5, 10, 15, 20];
+
+function Home() {
+    const [prods, setProds] = useState<ApiProps | null>(null);
+    const [sahifaRaqami, setSahifaRaqami] = useState<number>(1);
+    const [limit, setLimit] = useState(5);
+
+    const handleLimitChange = (event: ChangeEvent<HTMLSelectElement>) => {
+        setLimit(+event.currentTarget.value);
     };
 
     useEffect(() => {
-        fetchMahsulotlar();
-    }, []);
+        async function fetchData() {
+            try {
+                const res = await fetch(
+                    `http://localhost:8000/mahsulotlar?_page=${sahifaRaqami}&_per_page=${limit}`
+                );
+                const data = await res.json();
+                setProds(data);
+            } catch (err) {
+                console.log(err);
+            }
+        }
+        fetchData();
+    }, [sahifaRaqami, limit]);
 
-    if (loading) return <h2>Yuklanmoqda...</h2>;
-    if (error) return <h2>{error}</h2>;
+    const btnsSoni = prods?.items ? Math.ceil(prods.items / limit) : 0;
 
     return (
-        <div className="container">
-            <h1 className="title">Mahsulotlar</h1>
-            <div className="grid">
-                {mahsulotlar.map((item) => (
-                    <div key={item.id} className="card">
-                        <h3>{item.nomi}</h3>
-                        <p><b>Model:</b> {item.modeli}</p>
-                        <p><b>Narxi:</b> {item.narxi}$</p>
-                        <p><b>Soni:</b> {item.soni}</p>
+        <div className="home-container">
+            <h1 className="home-title">Home sahifa</h1>
+            {prods && (
+                <div className="product-grid">
+                    {prods.data?.map((item: Product) => (
+                        <div className="product-card" key={item.id}>
+                            <p>Nomi: {item.nomi}</p >
+                            <p>Narxi: {item.narxi}</p>
+                            <p>Modeli: {item.modeli}</p>
+                            <p>ID: {item.id}</p>
+                            <p>Soni: {item.soni}</p>
+                        </div>
+                    ))}
+                </div>
+            )}
+
+            <div className="pagination-controls">
+                <select
+                    value={limit}
+                    onChange={handleLimitChange}
+                    className="limit-select"
+                >
+                    {PER_PAGES.map((item: number) => (
+                        <option value={item} key={item}>
+                            {item}
+                        </option>
+                    ))}
+                </select>
+
+                {btnsSoni > 0 && (
+                    <div className="pagination-buttons">
+                        {new Array(btnsSoni).fill(1).map((_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => setSahifaRaqami(index + 1)}
+                                className={`page-btn ${sahifaRaqami === index + 1 ? "active" : ""}`}
+                            >
+                                {index + 1}
+                            </button>
+                        ))}
                     </div>
-                ))}
+                )}
             </div>
         </div>
     );
